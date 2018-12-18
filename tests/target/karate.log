@@ -1,0 +1,1328 @@
+04:53:47.167 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+04:53:47.618 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+04:53:49.728 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:53:50.300 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+04:53:50.710 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 409
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:53:49 GMT
+1 < Server: Kestrel
+
+
+04:53:50.766 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:53:50.770 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+04:53:50.965 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 186
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:53:50 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]
+
+04:53:50.979 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:53:50.995 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+04:53:51.024 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:53:50 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTgwMzEsImV4cCI6MTU0NTA5OTgzMSwiaWF0IjoxNTQ1MDk4MDMxLCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.STu7zV_MYLoyNMNUswSo60EBR0dH_BA2X2VtuHV-bfI"
+}
+
+04:53:51.027 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+04:59:09.583 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+04:59:09.763 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+04:59:10.353 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:59:10.727 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+04:59:11.487 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 759
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:59:10 GMT
+1 < Server: Kestrel
+
+
+04:59:11.497 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:59:11.501 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+04:59:11.637 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 123
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:59:10 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]
+
+04:59:11.651 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+04:59:11.660 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+04:59:11.686 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 01:59:10 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTgzNTEsImV4cCI6MTU0NTEwMDE1MSwiaWF0IjoxNTQ1MDk4MzUxLCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.IhpsBAM28AEL1jhKwknALFR6i5e_D5HHofDKCxhumBM"
+}
+
+04:59:11.699 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:09:55.408 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:09:55.575 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:09:56.187 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:09:56.542 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:09:57.354 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 811
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:09:56 GMT
+1 < Server: Kestrel
+
+
+05:09:57.367 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:09:57.370 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:09:57.520 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 135
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:09:56 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "ee3b090d-63cf-49e8-8428-11ed714fec84",
+    "_rid": "inlyALZ1cOZEAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZEAAAAAAAAAA==/",
+    "_etag": "\"0000890e-0000-0000-0000-5c1856f30000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098995
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]
+
+05:09:57.536 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:09:57.550 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:09:57.574 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:09:56 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTg5OTcsImV4cCI6MTU0NTEwMDc5NywiaWF0IjoxNTQ1MDk4OTk3LCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.5luS1bKfk-ruPaSh5KG17snanUSfu2NW7JJl7GdvPtw"
+}
+
+05:09:57.578 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:11:51.146 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:11:51.301 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:11:51.920 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:11:52.302 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:11:53.092 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 789
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:11:52 GMT
+1 < Server: Kestrel
+
+
+05:11:53.105 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:11:53.108 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:11:53.250 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 133
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:11:52 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "f4fdc97a-60a1-4409-ae39-195a79129701",
+    "_rid": "inlyALZ1cOZFAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZFAAAAAAAAAA==/",
+    "_etag": "\"00008a0e-0000-0000-0000-5c1857660000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099110
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "ee3b090d-63cf-49e8-8428-11ed714fec84",
+    "_rid": "inlyALZ1cOZEAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZEAAAAAAAAAA==/",
+    "_etag": "\"0000890e-0000-0000-0000-5c1856f30000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098995
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]
+
+05:11:53.258 [pool-1-thread-1] ERROR com.intuit.karate - assertion failed: path: $, actual: '[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "f4fdc97a-60a1-4409-ae39-195a79129701",
+    "_rid": "inlyALZ1cOZFAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZFAAAAAAAAAA==/",
+    "_etag": "\"00008a0e-0000-0000-0000-5c1857660000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099110
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "ee3b090d-63cf-49e8-8428-11ed714fec84",
+    "_rid": "inlyALZ1cOZEAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZEAAAAAAAAAA==/",
+    "_etag": "\"0000890e-0000-0000-0000-5c1856f30000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098995
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]', expected: '{"sender":"#string","text":"#string","id":"#string","_rid":"#string","_self":"#string","_etag":"#string","_attachments":"#string","_ts":"#string"}', reason: not equal
+05:11:53.277 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:11:53.284 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:11:53.311 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:11:52 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTkxMTMsImV4cCI6MTU0NTEwMDkxMywiaWF0IjoxNTQ1MDk5MTEzLCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.iPiKBw9ePdyOaYFBWtN2WP6qSaSgA5GFZIb1Yv7JPew"
+}
+
+05:11:53.314 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:15:07.288 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:15:07.446 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:15:08.048 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:15:08.425 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:15:09.229 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 804
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:15:08 GMT
+1 < Server: Kestrel
+
+
+05:15:09.244 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:15:09.249 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:15:09.395 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 134
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:15:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "a4621dda-0566-4aba-8749-910ea862761d",
+    "_rid": "inlyALZ1cOZGAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZGAAAAAAAAAA==/",
+    "_etag": "\"00008b0e-0000-0000-0000-5c18582b0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099307
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "f4fdc97a-60a1-4409-ae39-195a79129701",
+    "_rid": "inlyALZ1cOZFAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZFAAAAAAAAAA==/",
+    "_etag": "\"00008a0e-0000-0000-0000-5c1857660000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099110
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "ee3b090d-63cf-49e8-8428-11ed714fec84",
+    "_rid": "inlyALZ1cOZEAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZEAAAAAAAAAA==/",
+    "_etag": "\"0000890e-0000-0000-0000-5c1856f30000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098995
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]
+
+05:15:09.404 [pool-1-thread-1] ERROR com.intuit.karate - assertion failed: path: $, actual: '[
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "a4621dda-0566-4aba-8749-910ea862761d",
+    "_rid": "inlyALZ1cOZGAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZGAAAAAAAAAA==/",
+    "_etag": "\"00008b0e-0000-0000-0000-5c18582b0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099307
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "f4fdc97a-60a1-4409-ae39-195a79129701",
+    "_rid": "inlyALZ1cOZFAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZFAAAAAAAAAA==/",
+    "_etag": "\"00008a0e-0000-0000-0000-5c1857660000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545099110
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "ee3b090d-63cf-49e8-8428-11ed714fec84",
+    "_rid": "inlyALZ1cOZEAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZEAAAAAAAAAA==/",
+    "_etag": "\"0000890e-0000-0000-0000-5c1856f30000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098995
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "9123e50e-ab73-49f0-9efe-678ce0e44729",
+    "_rid": "inlyALZ1cOZDAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZDAAAAAAAAAA==/",
+    "_etag": "\"0000880e-0000-0000-0000-5c18546d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098349
+  },
+  {
+    "sender": "John Doe",
+    "text": "Hello! This is API testing message!",
+    "id": "0c70f4fd-bd50-4690-9553-9397b6bc6d95",
+    "_rid": "inlyALZ1cOZCAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOZCAAAAAAAAAA==/",
+    "_etag": "\"0000870e-0000-0000-0000-5c18532c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545098028
+  },
+  {
+    "sender": " TestNick",
+    "text": "Testing",
+    "id": "9b6e042d-1ca7-464e-8af2-e202fb82772e",
+    "_rid": "inlyALZ1cOY2AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY2AAAAAAAAAA==/",
+    "_etag": "\"00007a0e-0000-0000-0000-5c18226f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085551
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Kn1MS сменил имя на  TestNick!",
+    "id": "9874d98d-21a4-4fb1-877f-1da5c3451ffa",
+    "_rid": "inlyALZ1cOY1AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY1AAAAAAAAAA==/",
+    "_etag": "\"0000790e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "Kn1MS",
+    "text": "/nick TestNick",
+    "id": "1834f983-89b4-4e77-850e-90d5c5ac0db9",
+    "_rid": "inlyALZ1cOY0AAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOY0AAAAAAAAAA==/",
+    "_etag": "\"0000780e-0000-0000-0000-5c18226c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545085548
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (10000d10000). Результат: 49982629",
+    "id": "6543d896-7aa6-409e-a7dc-bdd58cca5406",
+    "_rid": "inlyALZ1cOYuAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYuAAAAAAAAAA==/",
+    "_etag": "\"00006b0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "Grivus",
+    "text": "10000d10000",
+    "id": "8bb1007b-3daa-4100-aed3-20545df992cf",
+    "_rid": "inlyALZ1cOYtAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYtAAAAAAAAAA==/",
+    "_etag": "\"00006a0e-0000-0000-0000-5c17e64f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070159
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (1000d1000). Результат: 488693",
+    "id": "390103ae-52ed-4284-a6d8-31387a3e038e",
+    "_rid": "inlyALZ1cOYsAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYsAAAAAAAAAA==/",
+    "_etag": "\"0000690e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "Grivus",
+    "text": "1000d1000",
+    "id": "53fa0000-f8ec-446c-8501-bc744fd4c155",
+    "_rid": "inlyALZ1cOYrAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYrAAAAAAAAAA==/",
+    "_etag": "\"0000680e-0000-0000-0000-5c17e6480000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070152
+  },
+  {
+    "sender": "СИСТЕМА",
+    "text": "Grivus сделал бросок костей (100d100). Результат: 5224",
+    "id": "393450db-a7f5-4223-81e6-bdf08b649275",
+    "_rid": "inlyALZ1cOYqAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYqAAAAAAAAAA==/",
+    "_etag": "\"0000670e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  },
+  {
+    "sender": "Grivus",
+    "text": "100d100",
+    "id": "90f2025b-1a64-4ab7-b604-124748f7d585",
+    "_rid": "inlyALZ1cOYpAAAAAAAAAA==",
+    "_self": "dbs/inlyAA==/colls/inlyALZ1cOY=/docs/inlyALZ1cOYpAAAAAAAAAA==/",
+    "_etag": "\"0000660e-0000-0000-0000-5c17e6450000\"",
+    "_attachments": "attachments/",
+    "_ts": 1545070149
+  }
+]', expected: '{"sender":"#string","text":"#string","id":"#string","_rid":"#string","_self":"#string","_etag":"#string","_attachments":"#string","_ts":"#number? _ >= 0"}', reason: not equal
+05:15:09.425 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:15:09.435 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:15:09.462 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:15:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTkzMDksImV4cCI6MTU0NTEwMTEwOSwiaWF0IjoxNTQ1MDk5MzA5LCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.TDNbr8XGPa4GcK2LIWtO5se4Vgx5F0QVNMGu6Q4FTPg"
+}
+
+05:15:09.469 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:16:21.094 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:16:21.249 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:16:21.849 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:16:22.211 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:7071/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:16:23.028 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 816
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:16:22 GMT
+1 < Server: Kestrel
+
+
+05:16:23.039 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:16:23.050 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:7071/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:7071
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:16:23.089 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:16:22 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUwOTkzODMsImV4cCI6MTU0NTEwMTE4MywiaWF0IjoxNTQ1MDk5MzgzLCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.vilkqoo_QcqAd4EmAErB8r7-e0tg4m1ePEJiyXHBJLI"
+}
+
+05:16:23.094 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:45:10.761 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:45:10.908 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:45:11.473 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:45:11.833 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://kn1ms.z6.web.core.windows.net/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: kn1ms.z6.web.core.windows.net
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:45:12.571 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 736
+1 < 405
+1 < Allow: GET,HEAD
+1 < Content-Length: 335
+1 < Content-Type: text/html
+1 < Date: Tue, 18 Dec 2018 02:45:09 GMT
+1 < Server: Windows-Azure-Web/1.0 Microsoft-HTTPAPI/2.0
+1 < x-ms-request-id: f3f39536-301e-0051-1b7b-9617a6000000
+<!DOCTYPE html><html><head><title>UnsupportedHttpVerb</title></head><body><h1>The resource doesn't support specified Http Verb.</h1><p><ul><li>HttpStatusCode: 405</li><li>ErrorCode: UnsupportedHttpVerb</li><li>RequestId : f3f39536-301e-0051-1b7b-9617a6000000</li><li>TimeStamp : 2018-12-18T02:45:10.5014393Z</li></ul></p></body></html>
+
+05:45:12.731 [pool-1-thread-1] ERROR com.intuit.karate - status code was: 405, expected: 200, response time: 736, url: https://kn1ms.z6.web.core.windows.net/api/messages, response: <html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>UnsupportedHttpVerb</title>
+    </head>
+    <body>
+        <h1>The resource doesn't support specified Http Verb.</h1>
+        <p>
+            <ul>
+                <li>HttpStatusCode: 405</li>
+                <li>ErrorCode: UnsupportedHttpVerb</li>
+                <li>RequestId : f3f39536-301e-0051-1b7b-9617a6000000</li>
+                <li>TimeStamp : 2018-12-18T02:45:10.5014393Z</li>
+            </ul>
+        </p>
+    </body>
+</html>
+
+05:45:12.742 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:45:12.753 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://kn1ms.z6.web.core.windows.net/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: kn1ms.z6.web.core.windows.net
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:45:12.955 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 202
+1 < 404
+1 < Content-Length: 321
+1 < Content-Type: text/html
+1 < Date: Tue, 18 Dec 2018 02:45:10 GMT
+1 < Server: Windows-Azure-Web/1.0 Microsoft-HTTPAPI/2.0
+1 < Vary: Origin
+1 < x-ms-error-code: WebContentNotFound
+1 < x-ms-request-id: 8d9680ef-301e-015e-1e7b-969fc7000000
+1 < x-ms-version: 2018-03-28
+<!DOCTYPE html><html><head><title>WebContentNotFound</title></head><body><h1>The requested content does not exist.</h1><p><ul><li>HttpStatusCode: 404</li><li>ErrorCode: WebContentNotFound</li><li>RequestId : 8d9680ef-301e-015e-1e7b-969fc7000000</li><li>TimeStamp : 2018-12-18T02:45:10.8902968Z</li></ul></p></body></html>
+
+05:45:12.959 [pool-1-thread-1] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 202, url: https://kn1ms.z6.web.core.windows.net/api/SignalRInfo, response: <html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>WebContentNotFound</title>
+    </head>
+    <body>
+        <h1>The requested content does not exist.</h1>
+        <p>
+            <ul>
+                <li>HttpStatusCode: 404</li>
+                <li>ErrorCode: WebContentNotFound</li>
+                <li>RequestId : 8d9680ef-301e-015e-1e7b-969fc7000000</li>
+                <li>TimeStamp : 2018-12-18T02:45:10.8902968Z</li>
+            </ul>
+        </p>
+    </body>
+</html>
+
+05:45:12.961 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
+05:47:05.457 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.8.0.1
+05:47:05.618 [main] INFO  c.i.karate.cucumber.CucumberRunner - Karate version: 0.8.0.1
+05:47:06.191 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:47:06.640 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://kn1ms-chat.azurewebsites.net/api/messages
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 66
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: kn1ms-chat.azurewebsites.net
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+{"sender":"John Doe","text":"Hello! This is API testing message!"}
+
+05:47:07.321 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 680
+1 < 200
+1 < Content-Length: 0
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:47:05 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < X-Powered-By: ASP.NET
+
+
+05:47:07.334 [pool-1-thread-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+05:47:07.341 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://kn1ms-chat.azurewebsites.net/api/SignalRInfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: kn1ms-chat.azurewebsites.net
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9.0.4)
+
+05:47:07.569 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Tue, 18 Dec 2018 02:47:05 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: ASP.NET
+{
+  "url": "https://kn1ms-chat.service.signalr.net:5001/client/?hub=chat",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NDUxMDEyMjUsImV4cCI6MTU0NTEwMzAyNSwiaWF0IjoxNTQ1MTAxMjI1LCJhdWQiOiJodHRwczovL2tuMW1zLWNoYXQuc2VydmljZS5zaWduYWxyLm5ldDo1MDAxL2NsaWVudC8_aHViPWNoYXQifQ.0pHKeQCFSfIolsuFxXHZTBNN34G3_DQvKO8GXMjziLQ"
+}
+
+05:47:07.574 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 1 on thread pool-1-thread-1: c:/kn1ms-chat/tests/tests_karate.feature
